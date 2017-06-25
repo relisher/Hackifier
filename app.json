@@ -1,0 +1,7 @@
+{
+  "name": "Hackifier",
+  "description": "A hackathon application and user management template",
+  "repository": "https://github.com/relisher/Hackifier",
+  "logo": "https://mlh.io/assets/logos/mlh-facebook-25d486805087489b3649b9bbcac66957.jpg",
+  "keywords": ["Gradle", "Grails", "Tomcat"]
+}

@@ -1,6 +1,6 @@
 import org.springframework.security.access.annotation.Secured
 
-@Secured(["ROLE_ADMIN"])
+@Secured(["ROLE_USER"])
 class HomeController {
     def springSecurityService
     def index() {
