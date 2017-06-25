@@ -109,6 +109,11 @@
 				<label for="remember_me"><g:message code='springSecurity.login.remember.me.label'/></label>
 			</p>
 
+			<p id="forgot_pwd_holder">
+                <input type="checkbox" onclick='window.location.assign("/register/forgotPassword")' class="chk" name="${forgotPwdParameter ?: 'forgot-pwd'}" id="forgotPassword" <g:if test='${hasCookie}'>checked="checked"</g:if>/>
+                <label for="forgotPassword"><g:message code='spring.security.ui.login.forgotPassword'/></label>
+            </p>
+
 			<p>
 				<input type="submit" id="submit" value="${message(code: 'springSecurity.login.button')}"/>
 			</p>

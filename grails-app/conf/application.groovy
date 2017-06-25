@@ -6,6 +6,8 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'acp.pennapps.U
 grails.plugin.springsecurity.authority.className = 'acp.pennapps.Role'
 grails.plugin.springsecurity.ui.register.defaultRoleNames = ['ROLE_USER']
 grails.plugin.springsecurity.logout.postOnly = false // allows logout to work
+grails.plugin.springsecurity.ui.forgotPassword.postResetUrl = '/reset'
+
 grails {
 	mail {
 		host = "smtp.gmail.com" 
@@ -43,8 +45,9 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern : '/user/**', access :['ROLE_ADMIN']], 
         [pattern : '/role/**', access :['ROLE_ADMIN']],
         [pattern : '/securityInfo/**', access :['ROLE_ADMIN']],
-        [pattern : '/registationCode/**', access :['ROLE_ADMIN']]
-        
+        [pattern : '/registationCode/**', access :['ROLE_ADMIN']],
+	[pattern : '/forgotPassword/**', access :['permitAll']],
+
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [
