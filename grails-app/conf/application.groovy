@@ -6,6 +6,18 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'acp.pennapps.U
 grails.plugin.springsecurity.authority.className = 'acp.pennapps.Role'
 grails.plugin.springsecurity.ui.register.defaultRoleNames = ['ROLE_USER']
 grails.plugin.springsecurity.logout.postOnly = false // allows logout to work
+grails {
+	mail {
+		host = "smtp.gmail.com" 
+      port = 465 
+      username = "ben@pennapps.com" 
+      password = "" 
+      props = ["mail.smtp.auth":"true", 
+               "mail.smtp.socketFactory.port":"465", 
+			   "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory", 
+               "mail.smtp.socketFactory.fallback":"false"] 
+	}
+}
 datasource {
     hibernate {
         cache.use_second_level_cache=true
@@ -20,6 +32,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/index.gsp',      access: ['permitAll']],
 	[pattern: '/shutdown',       access: ['permitAll']],
 	[pattern: '/assets/**',      access: ['permitAll']],
+	[pattern: '/register/**',       access: ['permitAll']],
+	[pattern: '/register',       access: ['permitAll']],
 	[pattern: '/**/js/**',       access: ['permitAll']],
 	[pattern: '/**/css/**',      access: ['permitAll']],
 	[pattern: '/**/images/**',   access: ['permitAll']],
@@ -28,7 +42,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern : '/plugins/**', access : ['ROLE_USER']],
         [pattern : '/user/**', access :['ROLE_ADMIN']], 
         [pattern : '/role/**', access :['ROLE_ADMIN']],
-        [pattern : '/register/**', access :['ROLE_ADMIN']], 
         [pattern : '/securityInfo/**', access :['ROLE_ADMIN']],
         [pattern : '/registationCode/**', access :['ROLE_ADMIN']]
         
