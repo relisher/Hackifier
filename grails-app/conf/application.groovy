@@ -4,6 +4,7 @@
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'acp.pennapps.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'acp.pennapps.UserRole'
 grails.plugin.springsecurity.authority.className = 'acp.pennapps.Role'
+grails.plugin.springsecurity.ui.register.defaultRoleNames = ['ROLE_USER']
 grails.plugin.springsecurity.logout.postOnly = false // allows logout to work
 datasource {
     hibernate {
@@ -27,6 +28,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern : '/plugins/**', access : ['ROLE_USER']],
         [pattern : '/user/**', access :['ROLE_ADMIN']], 
         [pattern : '/role/**', access :['ROLE_ADMIN']],
+        [pattern : '/register/**', access :['ROLE_ADMIN']], 
         [pattern : '/securityInfo/**', access :['ROLE_ADMIN']],
         [pattern : '/registationCode/**', access :['ROLE_ADMIN']]
         
