@@ -9,15 +9,10 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-        classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.1.1'
-        classpath "io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE"
+        classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.1.0'
+        classpath "io.spring.gradle:dependency-management-plugin:0.6.0.BUILD-SNAPSHOT"
     }
 }
-
-plugins {
-    id "io.spring.dependency-management" version "0.3.1.RELEASE"
-}
-
 version "0.1"
 group "pennapps-acp"
 
@@ -89,4 +84,8 @@ compile 'org.grails:grails-datastore-gorm-hibernate-core:5.0.4.RELEASE'
 
 task wrapper(type: Wrapper) {
   gradleVersion = gradleWrapperVersion
+}
+
+task stage {
+  dependsOn installDist
 }
