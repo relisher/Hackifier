@@ -1,0 +1,1 @@
+web: build/install/acp-pennapps/bin/acp-pennapps
