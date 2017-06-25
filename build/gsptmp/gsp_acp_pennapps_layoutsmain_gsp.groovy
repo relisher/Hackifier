@@ -32,19 +32,19 @@ invokeTag('stylesheet','asset',8,['src':("application.css")],-1)
 printHtmlPart(1)
 invokeTag('javascript','asset',9,['src':("application.js")],-1)
 printHtmlPart(2)
-invokeTag('layoutHead','g',11,[:],-1)
+invokeTag('layoutHead','g',12,[:],-1)
 printHtmlPart(3)
 })
-invokeTag('captureHead','sitemesh',12,[:],1)
+invokeTag('captureHead','sitemesh',13,[:],1)
 printHtmlPart(3)
 createTagBody(1, {->
 printHtmlPart(4)
-invokeTag('layoutBody','g',15,[:],-1)
+invokeTag('layoutBody','g',16,[:],-1)
 printHtmlPart(5)
-invokeTag('message','g',17,['code':("spinner.alt"),'default':("Loading&hellip;")],-1)
+invokeTag('message','g',18,['code':("spinner.alt"),'default':("Loading&hellip;")],-1)
 printHtmlPart(6)
 })
-invokeTag('captureBody','sitemesh',18,[:],1)
+invokeTag('captureBody','sitemesh',19,[:],1)
 printHtmlPart(7)
 }
 public static final Map JSP_TAGS = new HashMap()
@@ -52,7 +52,7 @@ protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1498403912000L
+public static final long LAST_MODIFIED = 1498408719000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'
