@@ -1,6 +1,5 @@
 <html>
 <head>
-	<meta name="layout" content="${gspLayout ?: 'main'}"/>
 	<title><g:message code='springSecurity.login.title'/></title>
 	<style type="text/css" media="screen">
 	#login {
@@ -103,11 +102,15 @@
 				<label for="password"><g:message code='springSecurity.login.password.label'/>:</label>
 				<input type="password" class="text_" name="${passwordParameter ?: 'password'}" id="password"/>
 			</p>
+                        
+
 
 			<p id="remember_me_holder">
 				<input type="checkbox" class="chk" name="${rememberMeParameter ?: 'remember-me'}" id="remember_me" <g:if test='${hasCookie}'>checked="checked"</g:if>/>
 				<label for="remember_me"><g:message code='springSecurity.login.remember.me.label'/></label>
 			</p>
+                        
+                        
 
 			<p id="forgot_pwd_holder">
                 <input type="checkbox" onclick='window.location.assign("/register/forgotPassword")' class="chk" name="${forgotPwdParameter ?: 'forgot-pwd'}" id="forgotPassword" <g:if test='${hasCookie}'>checked="checked"</g:if>/>
@@ -117,7 +120,14 @@
 			<p>
 				<input type="submit" id="submit" value="${message(code: 'springSecurity.login.button')}"/>
 			</p>
+                        
+                        <p>
+
+                        </p>
 		</form>
+                    <form action="/register" >
+                        <input type="submit" value="Register Now!" />
+                    <form>    
 	</div>
 </div>
 <script>

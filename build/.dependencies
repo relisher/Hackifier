@@ -14,6 +14,7 @@ file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastor
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate/4.3.8.0/315d9205dc174b125e3dbee7b651ca18ae30cc16/hibernate-4.3.8.0.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.1/7a360b62877f81907d9aa6f76b8019912d3a2031/cache-3.0.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-ehcache/4.3.8.Final/f040321945cbc2040d49f6cd9e273b4a76b59258/hibernate-ehcache-4.3.8.Final.jar
+file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/mail/2.0.0.RC6/d410eb8cda394dcf894291db5c0e7f94e600c21e/mail-2.0.0.RC6.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/asset-pipeline/3.0.1/77615e9144d6c11a2d800ab4057430e265f5e061/asset-pipeline-3.0.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/scaffolding/3.0.2/ab809720087be0898e252edd0978eee9ed1125c6/scaffolding-3.0.2.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.0.1/adfc3d460b04fbfce7eb470a6743e40ad88501/grails-plugin-testing-3.0.1.jar
@@ -68,6 +69,8 @@ file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.springframework/spring
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.3.GA/64499e907f19e5e1b3fdc02f81440c1832fe3545/jboss-logging-3.1.3.GA.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-annotations/1.2.0.Beta1/2f437f37bb265d9f8f1392823dbca12d2bec06d6/jboss-logging-annotations-1.2.0.Beta1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache-core/2.4.3/fd258ef6959f27fb678b04f90139ded4588e2d15/ehcache-core-2.4.3.jar
+file:/Users/arelin/.gradle/caches/modules-2/files-2.1/javax.mail/javax.mail-api/1.5.1/d40cb48faf5f39e86a6a5a8d8bee7b9673abf674/javax.mail-api-1.5.1.jar
+file:/Users/arelin/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.1/9724dd44f1abbba99c9858aa05fc91d53f59e7a5/javax.mail-1.5.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.mozilla/rhino/1.7R4/e982f2136574b9a423186fbaeaaa98dc3e5a5288/rhino-1.7R4.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/com.bertramlabs.plugins/asset-pipeline-core/2.1.1/574632c1409a1d8c5f1d3a0879c37ab33240dc3d/asset-pipeline-core-2.1.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails.plugins/fields/2.0.1/40df16577fa541f2869983b868d17b2d666baeda/fields-2.0.1.jar
@@ -113,6 +116,7 @@ file:/Users/arelin/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-stream/2.0.0.RELEASE/41a02f7a0d9d751bd5c986b6fe7802c6e7984d50/reactor-stream-2.0.0.RELEASE.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/434efef28c81162b17c540e634cffa3bd9b09b4c/classmate-1.0.0.jar
+file:/Users/arelin/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/com.google.javascript/closure-compiler/v20141023/b0bc533425f44e34210d4ecb57721db329f0cb30/closure-compiler-v20141023.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/asm/asm/3.3.1/1d5f20b4ea675e6fab6ab79f1cd60ec268ddc015/asm-3.3.1.jar
 file:/Users/arelin/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-validation/3.0.1/1bbf2fa50f48f065ffb98bcdc1dae17fe4f0490/grails-plugin-validation-3.0.1.jar
