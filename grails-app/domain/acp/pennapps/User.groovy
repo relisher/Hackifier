@@ -13,15 +13,17 @@ class User implements Serializable {
 
 	String username
 	String password
+	String three
 	boolean enabled = true
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
 
-	User(String username, String password) {
+	User(String username, String password, String three) {
 		this()
 		this.username = username
 		this.password = password
+		this.three = three
 	}
 
 	Set<Role> getAuthorities() {
@@ -47,6 +49,7 @@ class User implements Serializable {
 	static constraints = {
 		password blank: false, password: true
 		username blank: false, unique: true
+		three blank: false
 	}
 
 	static mapping = {
