@@ -16,6 +16,7 @@ class User implements Serializable {
 
 	String username
 	String password
+	String[] answers = {} 
 	// String three
 	boolean enabled = true
 	boolean accountExpired
