@@ -24,7 +24,7 @@ class User implements Serializable {
 
 	User(String username, String password) {
 	// User(String username, String password, String three) {
-		this()
+		super()
 		this.username = username
 		this.password = password
 		// this.three = three
