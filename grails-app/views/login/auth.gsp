@@ -76,6 +76,11 @@
                     	#login .inner .chk {
                     		height: 12px;
                     	}
+                    	html, body {
+                                        margin: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                    }
 	</style>
 </head>
 

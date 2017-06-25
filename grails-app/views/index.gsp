@@ -6,6 +6,86 @@
         <asset:stylesheet src="application.css"/>
         <asset:javascript src="application.js"/>
         <style type="text/css" media="screen">
+
+        html {
+            /* To make use of full height of page*/
+            min-height: 100%;
+            margin: 0;
+        }
+
+
+
+        #login {
+                    		margin: 15px 0px;
+                    		padding: 0px;
+                    		text-align: center;
+                    	}
+
+                    	#login .inner {
+                                    		width: 400px;
+                                    		text-align: left;
+                                    		background-color: #f0f0fa;
+                                    		-moz-box-shadow: 2px 2px 2px #eee;
+                                    		-webkit-box-shadow: 2px 2px 2px #eee;
+                                    		-khtml-box-shadow: 2px 2px 2px #eee;
+                                    		box-shadow: 2px 2px 2px #eee;
+                                    	}
+
+                    	#login .inner .fheader {
+                    		padding: 18px 26px 14px 26px;
+                    		background-color: #f7f7ff;
+                    		margin: 0px 0 14px 0;
+                    		color: #2e3741;
+                    		font-size: 18px;
+                    		font-weight: bold;
+                    	}
+
+                    	#login .inner .cssform p {
+                    		clear: left;
+                    		margin: 0;
+                    		padding-left: 105px;
+                    		margin-bottom: 20px;
+                    		height: 1%;
+                    	}
+
+                    	#login .inner .cssform input[type="text"] {
+                    		width: 120px;
+                    	}
+
+                    	#login .inner .cssform label {
+                    		font-weight: bold;
+                    		float: left;
+                    		text-align: right;
+                    		margin-left: -105px;
+                    		width: 110px;
+                    		padding-right: 10px;
+                    	}
+
+                    	#login #remember_me_holder {
+                    		padding-left: 120px;
+                    	}
+
+                    	#login #submit {
+                    		margin-left: 15px;
+                    	}
+
+                    	#login #remember_me_holder label {
+                    		float: none;
+                    		margin-left: 0;
+                    		text-align: left;
+                    		width: 200px
+                    	}
+
+                    	#login .inner .login_message {
+                    		color: #c33;
+                    	}
+
+                    	#login .inner .text_ {
+                    		width: 120px;
+                    	}
+
+                    	#login .inner .chk {
+                    	}
             #status {
                 background-color: #eee;
                 border: .2em solid #ccc;
@@ -77,77 +157,8 @@
                 }
             }
 
-            #login {
-            		margin: 15px 0px;
-            		padding: 0px;
-            		text-align: center;
-            	}
 
-            	#login .inner {
-                            		width: 400px;
-                            		text-align: left;
-                            		background-color: #f0f0fa;
-                            		-moz-box-shadow: 2px 2px 2px #eee;
-                            		-webkit-box-shadow: 2px 2px 2px #eee;
-                            		-khtml-box-shadow: 2px 2px 2px #eee;
-                            		box-shadow: 2px 2px 2px #eee;
-                            	}
 
-            	#login .inner .fheader {
-            		padding: 18px 26px 14px 26px;
-            		background-color: #f7f7ff;
-            		margin: 0px 0 14px 0;
-            		color: #2e3741;
-            		font-size: 18px;
-            		font-weight: bold;
-            	}
-
-            	#login .inner .cssform p {
-            		clear: left;
-            		margin: 0;
-            		padding-left: 105px;
-            		margin-bottom: 20px;
-            		height: 1%;
-            	}
-
-            	#login .inner .cssform input[type="text"] {
-            		width: 120px;
-            	}
-
-            	#login .inner .cssform label {
-            		font-weight: bold;
-            		float: left;
-            		text-align: right;
-            		margin-left: -105px;
-            		width: 110px;
-            		padding-right: 10px;
-            	}
-
-            	#login #remember_me_holder {
-            		padding-left: 120px;
-            	}
-
-            	#login #submit {
-            		margin-left: 15px;
-            	}
-
-            	#login #remember_me_holder label {
-            		float: none;
-            		margin-left: 0;
-            		text-align: left;
-            		width: 200px
-            	}
-
-            	#login .inner .login_message {
-            		color: #c33;
-            	}
-
-            	#login .inner .text_ {
-            		width: 120px;
-            	}
-
-            	#login .inner .chk {
-            	}
         </style>
     </head>
     <body>
@@ -157,9 +168,9 @@
             <div id="controller-list" role="navigation">
                 <h1><b>Menu</b></h1>
                 <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller"><g:link controller="${c.logicalPropertyName}">${c.name}</g:link></li>
-                    </g:each>
+                <li> <g:link controller="user" action="Index">Hacker</g:link></li>
+                <li> <g:link controller="role" action="Search"> Admin</g:link></li>
+                <li> <g:link controller="logout" action="Index">Logout</g:link></li>
                 </ul>
             </div>
         </div>
